@@ -1,0 +1,54 @@
+[
+ [
+    "name" : "CancellationRequestWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Cancellation Request", 
+    "category" : "LOS Cancellation",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "CancellationApprovedWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Approved Cancellation", 
+    "category" : "LOS Cancellation",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "CancellationRejectedWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Reject Cancellation", 
+    "category" : "LOS Cancellation",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "CancellationPrintLetterWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Print Cancellation Letter", 
+    "category" : "LOS Cancellation",
+    "icon" : "defaultservicenodeicon.png",
+  ]
+]

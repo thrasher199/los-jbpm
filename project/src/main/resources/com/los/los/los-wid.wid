@@ -1,0 +1,497 @@
+[
+    [
+    "name" : "CreateFinancingApplicationCaseWorkitemHandler", 
+    "parameters" : [ 
+        "P_PORTAL_APPLICATION_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Create new case", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "CreateManualCreationFinancingApplicationCaseWorkitemHandler", 
+    "parameters" : [ 
+        "P_PORTAL_APPLICATION_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Create manual case", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "AssignOwnerToNewCaseCreatedWorkitemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Assign New Case", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+    [
+    "name" : "PendingDocumentsWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Update To Pending Documents", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "VerifyICWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Update To Verify IC", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "CompleteVerifyICWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Complete Verify IC", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "DataEntryWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Update To Data Entry", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "CompleteMainDataEntryWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_ACTION_TYPE" : new StringDataType(), 
+        "P_IS_CONTRA" : new BooleanDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Complate Data Entry For Main Applicant", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "CompleteJointDataEntryWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_ACTION_TYPE" : new StringDataType(), 
+        "P_IS_CONTRA" : new BooleanDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Complate Data Entry For Joint Applicant", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "CreateContraInformationWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Create Contra Information Entry", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "CollateralTaggingWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Update To Collateral Tagging", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "CompleteCollateralTaggingWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Complete Collateral Tagging", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "QueryListWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Update To Query", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "CompleteQueryListWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Complete Query", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "CreateQueryListWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Create Query", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  
+  [
+    "name" : "ApproveWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Approved", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "RejectionWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Reject", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "RequestToEditWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Update  To Request Edit", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "CompleteRequestEditWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Complete Edit", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "TaskDistributionWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_TASK_DISTRIBUTION_TYPE" : new StringDataType(), 
+        "P_TASK_DISTRIBUTION_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Task Distribution", 
+    "category" : "LOS Distribution",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "CancellationRequestWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Cancellation Request", 
+    "category" : "LOS Cancellation",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "CancellatioApprovedtWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Approved Cancellation", 
+    "category" : "LOS Cancellation",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "CancellatioRejectedtWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Reject Cancellation", 
+    "category" : "LOS Cancellation",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "CancellatioPrintLettertWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Print Cancellation Letter", 
+    "category" : "LOS Cancellation",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "PrintLOWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Update To Print LO", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "CompletePrintLOWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Complete Print LO", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "VerifyLOWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Update To Verify LO", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "CompleteVerifyLOWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Complete Verify LO", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "VipPreAcceptanceWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Vip Pre Acceptance", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "CompleteVipAcceptPreAcceptanceWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Complete And Accept Pre Acceptance", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "CompleteVipRejectPreAcceptanceWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Complete And Reject Pre Acceptance", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "CustomerPreAcceptanceWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Customer Pre Acceptance", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "RejectPreAcceptanceWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Reject Pre Acceptance", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "AcceptPreAcceptanceWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Accept Pre Acceptance", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "CreateRejectWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Create Reject", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "CompleteRejectWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Complete Reject", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+    "name" : "RejectApproveLetterWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Reject Approve Letter", 
+    "category" : "LOS",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+  [
+        "name" : "UpdateAdhocCaseWorkItemHandler", 
+        "parameters" : [ 
+            "P_CASE_NO" : new StringDataType(), 
+            "P_ACTION_STEP_CODE" : new StringDataType(), 
+            "P_DATA" : new ObjectDataType()
+        ],
+        "results" : [ 
+            "Result" : new ObjectDataType("java.util.Map") 
+        ], 
+        "displayName" : "To Update Case", 
+        "category" : "LOS General",
+        "icon" : "defaultservicenodeicon.png",
+    ]
+]

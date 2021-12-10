@@ -1,0 +1,186 @@
+[
+ [
+    "name" : "CreateAppealWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ],
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Create Appeal", 
+    "category" : "LOS Appeal",
+    "icon" : "defaultservicenodeicon.png",
+],
+[
+    "name" : "AppealPendingDocumentsWorkitemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ],
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Appeal Pending Documents", 
+    "category" : "LOS Appeal",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+[
+    "name" : "AppealDataEntryWorkitemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ],
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Appeal Data Entry", 
+    "category" : "LOS Appeal",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+[
+    "name" : "AppealReviewWorkitemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ],
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Appeal Review", 
+    "category" : "LOS Appeal",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+[
+    "name" : "AppealCompleteApproveWorkitemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ],
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Appeal Complete Approve", 
+    "category" : "LOS Appeal",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+[
+    "name" : "AppealRejectApproveWorkitemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ],
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Appeal Reject Approve", 
+    "category" : "LOS Appeal",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+[
+    "name" : "AppealUpdatePrintLOWorkitemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ],
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Appeal Update Print Lo", 
+    "category" : "LOS Appeal",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+[
+    "name" : "AppealPrintLOWorkitemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ],
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Appeal Print Lo", 
+    "category" : "LOS Appeal",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+[
+    "name" : "AppealCustomerAcceptanceWorkitemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ],
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Appeal Customer Acceptance", 
+    "category" : "LOS Appeal",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+[
+    "name" : "AppealAcceptCustomerAcceptanceWorkitemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ],
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Appeal Accept Customer Acceptance", 
+    "category" : "LOS Appeal",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+[
+    "name" : "AppealRejectCustomerAcceptanceWorkitemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ],
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Appeal Reject Customer Acceptance", 
+    "category" : "LOS Appeal",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+[
+    "name" : "AppealVipPreAcceptanceWorkitemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ],
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Appeal Vip Pre Acceptance", 
+    "category" : "LOS Appeal",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+[
+    "name" : "AppealVipAcceptPreAcceptanceWorkitemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ],
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Appeal Vip Accept Pre Acceptance", 
+    "category" : "LOS Appeal",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+[
+    "name" : "AppealVipRejectPreAcceptanceWorkitemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ],
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Appeal Vip Reject Pre Acceptance", 
+    "category" : "LOS Appeal",
+    "icon" : "defaultservicenodeicon.png",
+  ]
+
+
+]

@@ -1,0 +1,120 @@
+[
+ [
+        "name" : "UpdateAdhocCaseWorkItemHandler", 
+        "parameters" : [ 
+            "P_CASE_NO" : new StringDataType(), 
+            "P_ACTION_STEP_CODE" : new StringDataType(), 
+            "P_DATA" : new ObjectDataType()
+        ],
+        "results" : [ 
+            "Result" : new ObjectDataType("java.util.Map") 
+        ], 
+        "displayName" : "To Update Case", 
+        "category" : "LOS General",
+        "icon" : "defaultservicenodeicon.png",
+    ],
+[
+    "name" : "AcceptAmendmentCustomerAcceptanceWorkItemHandler ", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ],
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Amendment Accept Customer Acceptance", 
+    "category" : "LOS Amendment",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+[
+    "name" : "AmendmentVerifyDocumentRouteToPortalWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ],
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Amendment Verify Document", 
+    "category" : "LOS Amendment",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+[
+    "name" : "CompleteAmendmentApprovedWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ],
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Amendment Complete Approved", 
+    "category" : "LOS Amendment",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+[
+    "name" : "CompleteAmendmentGenerateSupplementaryLOWorkItemHandler ", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ],
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Amendment Generate LO", 
+    "category" : "LOS Amendment",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+[
+    "name" : "CompleteAmendmentRejectedWorkItemHandler ", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ],
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Amendment Rejected", 
+    "category" : "LOS Amendment",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+[
+    "name" : "CompleteAmendmentVerifyDocumentWorkItemHandler ", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ],
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Amendment Verify Document", 
+    "category" : "LOS Amendment",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+[
+    "name" : "CreateAmendmentWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ],
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Create Amendment", 
+    "category" : "LOS Amendment",
+    "icon" : "defaultservicenodeicon.png",
+  ],
+[
+    "name" : "RejectAmendmentCustomerAcceptanceWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType(), 
+        "P_DATA" : new ObjectDataType()
+    ],
+    "results" : [ 
+        "Result" : new ObjectDataType("java.util.Map") 
+    ], 
+    "displayName" : "Amendment Reject Customer Acceptance", 
+    "category" : "LOS Amendment",
+    "icon" : "defaultservicenodeicon.png",
+  ]
+]

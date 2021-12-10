@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deployment-descriptor xsi:schemaLocation="http://www.jboss.org/jbpm deployment-descriptor.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <persistence-unit>org.jbpm.domain</persistence-unit>
+    <audit-persistence-unit>org.jbpm.domain</audit-persistence-unit>
+    <audit-mode>JPA</audit-mode>
+    <persistence-mode>JPA</persistence-mode>
+    <runtime-strategy>SINGLETON</runtime-strategy>
+    <marshalling-strategies/>
+    <event-listeners/>
+    <task-event-listeners/>
+    <globals/>
+    <work-item-handlers>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.appeal.CreateAppealWorkItemHandler()</identifier>
+            <parameters/>
+            <name>CreateAppealWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.CancellationRequestWorkItemHandler()</identifier>
+            <parameters/>
+            <name>CancellationRequestWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.appeal.AppealVipRejectPreAcceptanceWorkitemHandler()</identifier>
+            <parameters/>
+            <name>AppealVipRejectPreAcceptanceWorkitemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.main.CreateManualCreationFinancingApplicationCaseWorkitemHandler()</identifier>
+            <parameters/>
+            <name>CreateManualCreationFinancingApplicationCaseWorkitemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.main.VerifyICWorkItemHandler()</identifier>
+            <parameters/>
+            <name>VerifyICWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.main.CompleteVerifyLOWorkItemHandler()</identifier>
+            <parameters/>
+            <name>CompleteVerifyLOWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.main.VipPreAcceptanceWorkItemHandler()</identifier>
+            <parameters/>
+            <name>VipPreAcceptanceWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.main.ReviewApplicationWorkItemHandler()</identifier>
+            <parameters/>
+            <name>ReviewApplicationWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.report.DailyPendingDocumentWorkItemHandler()</identifier>
+            <parameters/>
+            <name>DailyPendingDocumentWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.main.CompleteMainDataEntryWorkItemHandler()</identifier>
+            <parameters/>
+            <name>CompleteMainDataEntryWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.amendment.AcceptAmendmentCustomerAcceptanceWorkItemHandler()</identifier>
+            <parameters/>
+            <name>AcceptAmendmentCustomerAcceptanceWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.amendment.CompleteAmendmentRejectedWorkItemHandler()</identifier>
+            <parameters/>
+            <name>CompleteAmendmentRejectedWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.main.AssignOwnerToNewCaseCreatedWorkitemHandler()</identifier>
+            <parameters/>
+            <name>AssignOwnerToNewCaseCreatedWorkitemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.main.CustomerPreAcceptanceWorkItemHandler()</identifier>
+            <parameters/>
+            <name>CustomerPreAcceptanceWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.main.CompleteJointDataEntryWorkItemHandler()</identifier>
+            <parameters/>
+            <name>CompleteJointDataEntryWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.main.RejectionWorkItemHandler()</identifier>
+            <parameters/>
+            <name>RejectionWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.main.AcceptPreAcceptanceWorkItemHandler()</identifier>
+            <parameters/>
+            <name>RejectPreAcceptanceWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.appeal.AppealPrintLOWorkitemHandler()</identifier>
+            <parameters/>
+            <name>AppealPrintLOWorkitemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.QueryListWorkItemHandler()</identifier>
+            <parameters/>
+            <name>QueryListWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.main.AcceptPreAcceptanceWorkItemHandler()</identifier>
+            <parameters/>
+            <name>AcceptPreAcceptanceWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.main.CompleteCollateralTaggingWorkItemHandler()</identifier>
+            <parameters/>
+            <name>CompleteCollateralTaggingWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.CancellationApprovedWorkItemHandler()</identifier>
+            <parameters/>
+            <name>CancellationApprovedWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.appeal.AppealUpdatePrintLOWorkitemHandler()</identifier>
+            <parameters/>
+            <name>AppealUpdatePrintLOWorkitemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.amendment.CompleteAmendmentVerifyDocumentWorkItemHandler()</identifier>
+            <parameters/>
+            <name>CompleteAmendmentVerifyDocumentWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.appeal.AppealRejectCustomerAcceptanceWorkitemHandler()</identifier>
+            <parameters/>
+            <name>AppealRejectCustomerAcceptanceWorkitemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.main.PendingDocumentsWorkItemHandler()</identifier>
+            <parameters/>
+            <name>PendingDocumentsWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.main.CompletePrintLOWorkItemHandler()</identifier>
+            <parameters/>
+            <name>CompletePrintLOWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.CancellationRejectedWorkItemHandler()</identifier>
+            <parameters/>
+            <name>CancellationRejectedWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.appeal.AppealVipAcceptPreAcceptanceWorkitemHandler()</identifier>
+            <parameters/>
+            <name>AppealVipAcceptPreAcceptanceWorkitemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.main.CompleteRequestEditWorkItemHandler()</identifier>
+            <parameters/>
+            <name>CompleteRequestEditWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.main.ApproveWorkItemHandler()</identifier>
+            <parameters/>
+            <name>ApproveWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.appeal.AppealAcceptCustomerAcceptanceWorkitemHandler()</identifier>
+            <parameters/>
+            <name>AppealAcceptCustomerAcceptanceWorkitemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.appeal.AppealVipPreAcceptanceWorkitemHandler()</identifier>
+            <parameters/>
+            <name>AppealVipPreAcceptanceWorkitemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.main.CollateralTaggingWorkItemHandler()</identifier>
+            <parameters/>
+            <name>CollateralTaggingWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.TaskDistributionWorkItemHandler()</identifier>
+            <parameters/>
+            <name>TaskDistributionWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.RejectApproveLetterWorkItemHandler()</identifier>
+            <parameters/>
+            <name>RejectApproveLetterWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.CompleteQueryListWorkItemHandler()</identifier>
+            <parameters/>
+            <name>CompleteQueryListWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.main.PrintLOWorkItemHandler()</identifier>
+            <parameters/>
+            <name>PrintLOWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.CancellationPrintLetterWorkItemHandler()</identifier>
+            <parameters/>
+            <name>CancellationPrintLetterWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.CreateQueryListWorkItemHandler()</identifier>
+            <parameters/>
+            <name>CreateQueryListWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.main.CreateFinancingApplicationCaseWorkitemHandler()</identifier>
+            <parameters/>
+            <name>CreateFinancingApplicationCaseWorkitemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.amendment.CompleteAmendmentApprovedWorkItemHandler()</identifier>
+            <parameters/>
+            <name>CompleteAmendmentApprovedWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.CompleteRejectWorkItemHandler()</identifier>
+            <parameters/>
+            <name>CompleteRejectWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.main.RequestToEditWorkItemHandler()</identifier>
+            <parameters/>
+            <name>RequestToEditWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.amendment.AmendmentVerifyDocumentRouteToPortalWorkItemHandler()</identifier>
+            <parameters/>
+            <name>AmendmentVerifyDocumentRouteToPortalWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.main.VerifyLOWorkItemHandler()</identifier>
+            <parameters/>
+            <name>VerifyLOWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.main.DataEntryWorkItemHandler()</identifier>
+            <parameters/>
+            <name>DataEntryWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.appeal.AppealCompleteApproveWorkitemHandler()</identifier>
+            <parameters/>
+            <name>AppealCompleteApproveWorkitemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.amendment.RejectAmendmentCustomerAcceptanceWorkItemHandler()</identifier>
+            <parameters/>
+            <name>RejectAmendmentCustomerAcceptanceWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.UpdateAdhocCaseWorkItemHandler()</identifier>
+            <parameters/>
+            <name>UpdateAdhocCaseWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.main.CompleteVipRejectPreAcceptanceWorkItemHandler()</identifier>
+            <parameters/>
+            <name>CompleteVipRejectPreAcceptanceWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.amendment.CompleteAmendmentGenerateSupplementaryLOWorkItemHandler()</identifier>
+            <parameters/>
+            <name>CompleteAmendmentGenerateSupplementaryLOWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.amendment.CreateAmendmentWorkItemHandler()</identifier>
+            <parameters/>
+            <name>CreateAmendmentWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.appeal.AppealRejectApproveWorkitemHandler()</identifier>
+            <parameters/>
+            <name>AppealRejectApproveWorkitemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.CreateRejectWorkItemHandler()</identifier>
+            <parameters/>
+            <name>CreateRejectWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.main.CompleteVipAcceptPreAcceptanceWorkItemHandler()</identifier>
+            <parameters/>
+            <name>CompleteVipAcceptPreAcceptanceWorkItemHandler</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new my.com.mandrill.los.jbpm.workitem.adhoc.appeal.AppealCustomerAcceptanceWorkitemHandler()</identifier>
+            <parameters/>
+            <name>AppealCustomerAcceptanceWorkitemHandler</name>
+        </work-item-handler>
+    </work-item-handlers>
+    <environment-entries/>
+    <configurations/>
+    <required-roles/>
+    <remoteable-classes/>
+    <limit-serialization-classes>true</limit-serialization-classes>
+</deployment-descriptor>

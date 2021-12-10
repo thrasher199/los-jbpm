@@ -1,0 +1,11 @@
+[
+  [
+    "name" : "DailyPendingDocumentWorkItemHandler", 
+    "parameters" : [ 
+        "P_CASE_NO" : new StringDataType() 
+    ],, 
+    "displayName" : "Add Daily Pending Document Handler Report", 
+    "category" : "FOS Report",
+    "icon" : "defaultservicenodeicon.png",
+  ]
+]
